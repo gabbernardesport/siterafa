@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAFA SD Designer — Design que transforma atenção em resultado.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo">RAFA<span>SD</span></a>
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <a href="#contato" class="btn btn-gold nav-cta">Solicitar orçamento</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio" class="mobile-link">Início</a>
+      <a href="#servicos" class="mobile-link">Serviços</a>
+      <a href="#processo" class="mobile-link">Como funciona</a>
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#contato" class="btn btn-gold mobile-cta">Solicitar orçamento</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <div class="gold-wave wave1"></div>
+      <div class="gold-wave wave2"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+
+    <div class="scene" aria-hidden="true">
+      <div class="obj sphere">
+        <div class="sphere-inner"></div>
+        <div class="sphere-glow"></div>
+      </div>
+      <div class="obj cube">
+        <div class="cube-face front">T</div>
+        <div class="cube-face back"></div>
+        <div class="cube-face left"></div>
+        <div class="cube-face right"></div>
+        <div class="cube-face top"></div>
+        <div class="cube-face bottom"></div>
+      </div>
+      <div class="obj pen-tool">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 8 L56 32 L32 56 L8 32 Z" stroke="#c9a84c" stroke-width="2" fill="rgba(201,168,76,0.08)"/>
+          <circle cx="32" cy="32" r="6" fill="#c9a84c"/>
+          <circle cx="32" cy="8" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          <circle cx="56" cy="32" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          <circle cx="32" cy="56" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          <circle cx="8" cy="32" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="obj stylus">
+        <svg viewBox="0 0 32 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="0" width="12" height="62" rx="6" fill="url(#stylusGrad)" />
+          <polygon points="10,62 22,62 16,80" fill="#c9a84c"/>
+          <defs>
+            <linearGradient id="stylusGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#2a2a2a"/>
+              <stop offset="50%" stop-color="#c9a84c"/>
+              <stop offset="100%" stop-color="#2a2a2a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="obj emblem">
+        <div class="emblem-ring">
+          <span class="emblem-letter">R</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero-content">
+      <p class="overline reveal">DESIGN QUE COMUNICA. IDENTIDADE QUE MARCA.</p>
+      <h1 class="hero-title reveal">
+        Design que <span class="gold">transforma</span><br />
+        atenção em resultado.
+      </h1>
+      <p class="hero-sub reveal">
+        Sou <strong>RAFA SD</strong>, designer gráfico especializado em criar soluções visuais estratégicas que fortalecem marcas, geram conexão e impulsionam negócios.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#contato" class="btn btn-gold">Solicitar orçamento ↗</a>
+        <a href="#servicos" class="btn btn-outline">Ver serviços ↓</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ========== SERVIÇOS ========== -->
+  <section id="servicos" class="section services-section">
+    <div class="container">
+      <p class="overline center reveal">SERVIÇOS</p>
+      <h2 class="section-title center reveal">O que eu faço</h2>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-icon">🎨</div>
+          <h3>Identidade Visual</h3>
+          <p>Criação de marcas fortes e memoráveis que transmitem profissionalismo e geram reconhecimento.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📱</div>
+          <h3>Social Media</h3>
+          <p>Design estratégico para redes sociais que atrai, engaja e comunica com clareza.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📊</div>
+          <h3>Apresentações</h3>
+          <p>Apresentações impactantes que informam com clareza e destacam sua mensagem.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📄</div>
+          <h3>Materiais Impressos</h3>
+          <p>Folders, cartões, banners e muito mais com design profissional que comunica e gera credibilidade.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📢</div>
+          <h3>Anúncios</h3>
+          <p>Design para anúncios online e offline que chama atenção e aumenta a conversão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESSO ========== -->
+  <section id="processo" class="section process-section">
+    <div class="container">
+      <p class="overline center reveal">PROCESSO</p>
+      <h2 class="section-title center reveal">Como funciona</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">💬</div>
+          <div class="step-body">
+            <h3>Briefing</h3>
+            <p>Entendemos seu objetivo, público e necessidades do projeto.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">🔍</div>
+          <div class="step-body">
+            <h3>Estratégia</h3>
+            <p>Planejamento criativo para garantir que o design tenha propósito e direção.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">✒️</div>
+          <div class="step-body">
+            <h3>Design</h3>
+            <p>Criação de artes únicas, profissionais e alinhadas à sua marca.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon">🔄</div>
+          <div class="step-body">
+            <h3>Revisões</h3>
+            <p>Ajustamos cada detalhe até o resultado final ficar perfeito.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">05</div>
+          <div class="step-icon">🚀</div>
+          <div class="step-body">
+            <h3>Entrega</h3>
+            <p>Entrega dos arquivos prontos para uso com suporte e orientação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DIFERENCIAIS ========== -->
+  <section id="sobre" class="section diferentials-section">
+    <div class="container">
+      <p class="overline center reveal">POR QUE INVESTIR EM DESIGN?</p>
+      <h2 class="section-title center reveal">Design é mais que estética,<br />é estratégia.</h2>
+      <div class="dif-grid">
+        <div class="dif-card reveal">
+          <span class="dif-icon">⭐</span>
+          <div>
+            <h3>Mais credibilidade</h3>
+            <p>Sua marca transmite confiança e profissionalismo.</p>
+          </div>
+        </div>
+        <div class="dif-card reveal">
+          <span class="dif-icon">📈</span>
+          <div>
+            <h3>Mais profissionalismo</h3>
+            <p>Destaque-se da concorrência com uma identidade forte.</p>
+          </div>
+        </div>
+        <div class="dif-card reveal">
+          <span class="dif-icon">💎</span>
+          <div>
+            <h3>Mais percepção de valor</h3>
+            <p>Um bom design aumenta o valor percebido do seu serviço.</p>
+          </div>
+        </div>
+        <div class="dif-card reveal">
+          <span class="dif-icon">🎯</span>
+          <div>
+            <h3>Mais conversão</h3>
+            <p>Comunicação visual estratégica que atrai e converte clientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section id="contato" class="section cta-section">
+    <div class="cta-bg" aria-hidden="true">
+      <div class="cta-waves"></div>
+      <div class="cta-chip">
+        <div class="chip-body">
+          <div class="chip-logo">R</div>
+          <div class="chip-lines">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container cta-content">
+      <h2 class="cta-title reveal">
+        Sua marca merece parecer tão profissional<br />
+        quanto o serviço que você entrega.
+      </h2>
+      <a href="https://wa.me/5534999999999?text=Ol%C3%A1%20RAFA%20SD!%20Quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn btn-gold btn-large reveal">
+        Vamos conversar? ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo footer-logo">RAFA<span>SD</span></div>
+        <p class="footer-tagline">Design com propósito.<br />Resultados que conectam.</p>
+      </div>
+      <div class="footer-col">
+        <h4>SERVIÇOS</h4>
+        <ul>
+          <li><a href="#servicos">Identidade Visual</a></li>
+          <li><a href="#servicos">Social Media</a></li>
+          <li><a href="#servicos">Apresentações</a></li>
+          <li><a href="#servicos">Materiais Impressos</a></li>
+          <li><a href="#servicos">Anúncios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>VAMOS CONVERSAR?</h4>
+        <ul>
+          <li>
+            <a href="https://wa.me/5534999999999" target="_blank" rel="noopener">
+              📞 (34) 99999-9999
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/rafasddesign" target="_blank" rel="noopener">
+              📸 @rafasddesign
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 RAFA SD. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
