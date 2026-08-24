@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAFA SD Designer — Design que transforma atenção em resultado.</title>
+  <title>Rafael SD — Produtor Multimídia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,284 +14,268 @@
   <!-- ========== NAVBAR ========== -->
   <header id="navbar">
     <div class="container nav-inner">
-      <a href="#inicio" class="logo">RAFA<span>SD</span></a>
+      <a href="#sobre" class="logo">Rafael<span>SD</span></a>
       <nav class="nav-links">
-        <a href="#inicio">Início</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#processo">Como funciona</a>
         <a href="#sobre">Sobre</a>
+        <a href="#metodo">Como eu trabalho</a>
+        <a href="#contato">Contato</a>
       </nav>
-      <a href="#contato" class="btn btn-gold nav-cta">Solicitar orçamento</a>
+      <a href="#contato" class="btn btn-gold nav-cta">Falar comigo</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#inicio" class="mobile-link">Início</a>
-      <a href="#servicos" class="mobile-link">Serviços</a>
-      <a href="#processo" class="mobile-link">Como funciona</a>
       <a href="#sobre" class="mobile-link">Sobre</a>
-      <a href="#contato" class="btn btn-gold mobile-cta">Solicitar orçamento</a>
+      <a href="#metodo" class="mobile-link">Como eu trabalho</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="#contato" class="btn btn-gold mobile-cta">Falar comigo</a>
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section id="inicio" class="hero">
+  <!-- ========== HERO / SOBRE ========== -->
+  <section id="sobre" class="hero">
     <div class="hero-bg">
       <div class="gold-wave wave1"></div>
       <div class="gold-wave wave2"></div>
       <div class="particles" id="particles"></div>
     </div>
 
+    <!-- 3D floating objects -->
     <div class="scene" aria-hidden="true">
       <div class="obj sphere">
         <div class="sphere-inner"></div>
         <div class="sphere-glow"></div>
-      </div>
-      <div class="obj cube">
-        <div class="cube-face front">T</div>
-        <div class="cube-face back"></div>
-        <div class="cube-face left"></div>
-        <div class="cube-face right"></div>
-        <div class="cube-face top"></div>
-        <div class="cube-face bottom"></div>
-      </div>
-      <div class="obj pen-tool">
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M32 8 L56 32 L32 56 L8 32 Z" stroke="#c9a84c" stroke-width="2" fill="rgba(201,168,76,0.08)"/>
-          <circle cx="32" cy="32" r="6" fill="#c9a84c"/>
-          <circle cx="32" cy="8" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
-          <circle cx="56" cy="32" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
-          <circle cx="32" cy="56" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
-          <circle cx="8" cy="32" r="4" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
-        </svg>
-      </div>
-      <div class="obj stylus">
-        <svg viewBox="0 0 32 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="0" width="12" height="62" rx="6" fill="url(#stylusGrad)" />
-          <polygon points="10,62 22,62 16,80" fill="#c9a84c"/>
-          <defs>
-            <linearGradient id="stylusGrad" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#2a2a2a"/>
-              <stop offset="50%" stop-color="#c9a84c"/>
-              <stop offset="100%" stop-color="#2a2a2a"/>
-            </linearGradient>
-          </defs>
-        </svg>
       </div>
       <div class="obj emblem">
         <div class="emblem-ring">
           <span class="emblem-letter">R</span>
         </div>
       </div>
+      <div class="obj geo geo1"></div>
+      <div class="obj geo geo2"></div>
     </div>
 
     <div class="container hero-content">
-      <p class="overline reveal">DESIGN QUE COMUNICA. IDENTIDADE QUE MARCA.</p>
+      <p class="overline reveal">PRODUTOR MULTIMÍDIA · UBERLÂNDIA / UBERABA (MG)</p>
       <h1 class="hero-title reveal">
-        Design que <span class="gold">transforma</span><br />
-        atenção em resultado.
+        Rafael,<br />
+        <span class="gold">produtor multimídia.</span>
       </h1>
-      <p class="hero-sub reveal">
-        Sou <strong>RAFA SD</strong>, designer gráfico especializado em criar soluções visuais estratégicas que fortalecem marcas, geram conexão e impulsionam negócios.
-      </p>
+
+      <div class="bio reveal">
+        <p>
+          <strong class="placeholder">[X] anos</strong>, baseado em Uberlândia/Uberaba (MG),
+          atuando com produção multimídia para marcas e negócios que precisam de presença
+          digital que realmente converte — não só que "parece bonita".
+        </p>
+        <p>
+          Trabalho na ponte entre criação e resultado: fotografia, vídeo, design e social media,
+          sempre com um objetivo claro por trás — atrair atenção, guiar o público e gerar ação.
+        </p>
+      </div>
+
+      <!-- Passagem por -->
+      <div class="passage reveal">
+        <span class="passage-label">Passagem por</span>
+        <span class="passage-items">
+          <span class="placeholder">[empresa ou cliente 1]</span>
+          <span class="sep">·</span>
+          <span class="placeholder">[empresa ou cliente 2]</span>
+          <span class="sep">·</span>
+          <span class="placeholder">[agência ou cliente 3]</span>
+        </span>
+      </div>
+
+      <!-- Ferramentas -->
+      <div class="tools reveal">
+        <p class="tools-label">Ferramentas e frentes de trabalho</p>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <span class="tool-dot"></span>
+            <div>
+              <strong>Desenvolvimento web</strong>
+              <span>Next.js, TypeScript, Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="tool-item">
+            <span class="tool-dot"></span>
+            <div>
+              <strong>Mídia paga</strong>
+              <span>Arquitetura de campanhas Meta Ads, estratégia de funil</span>
+            </div>
+          </div>
+          <div class="tool-item">
+            <span class="tool-dot"></span>
+            <div>
+              <strong>Conteúdo &amp; leads</strong>
+              <span>Estratégia de conteúdo e geração de leads via social media</span>
+            </div>
+          </div>
+          <div class="tool-item">
+            <span class="tool-dot"></span>
+            <div>
+              <strong>Produção criativa</strong>
+              <span>Fotografia, audiovisual e design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="hero-btns reveal">
-        <a href="#contato" class="btn btn-gold">Solicitar orçamento ↗</a>
-        <a href="#servicos" class="btn btn-outline">Ver serviços ↓</a>
+        <a href="#metodo" class="btn btn-gold">Como eu trabalho ↓</a>
+        <a href="#contato" class="btn btn-outline">Falar comigo ↗</a>
       </div>
     </div>
 
-    <div class="scroll-hint" aria-hidden="true">
-      <span></span>
-    </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- ========== SERVIÇOS ========== -->
-  <section id="servicos" class="section services-section">
+  <!-- ========== COMO EU TRABALHO ========== -->
+  <section id="metodo" class="section metodo-section">
     <div class="container">
-      <p class="overline center reveal">SERVIÇOS</p>
-      <h2 class="section-title center reveal">O que eu faço</h2>
-      <div class="cards-grid">
-        <div class="card reveal">
-          <div class="card-icon">🎨</div>
-          <h3>Identidade Visual</h3>
-          <p>Criação de marcas fortes e memoráveis que transmitem profissionalismo e geram reconhecimento.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">📱</div>
-          <h3>Social Media</h3>
-          <p>Design estratégico para redes sociais que atrai, engaja e comunica com clareza.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">📊</div>
-          <h3>Apresentações</h3>
-          <p>Apresentações impactantes que informam com clareza e destacam sua mensagem.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">📄</div>
-          <h3>Materiais Impressos</h3>
-          <p>Folders, cartões, banners e muito mais com design profissional que comunica e gera credibilidade.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon">📢</div>
-          <h3>Anúncios</h3>
-          <p>Design para anúncios online e offline que chama atenção e aumenta a conversão.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PROCESSO ========== -->
-  <section id="processo" class="section process-section">
-    <div class="container">
-      <p class="overline center reveal">PROCESSO</p>
-      <h2 class="section-title center reveal">Como funciona</h2>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-num">01</div>
-          <div class="step-icon">💬</div>
-          <div class="step-body">
-            <h3>Briefing</h3>
-            <p>Entendemos seu objetivo, público e necessidades do projeto.</p>
-          </div>
-          <div class="step-line"></div>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">02</div>
-          <div class="step-icon">🔍</div>
-          <div class="step-body">
-            <h3>Estratégia</h3>
-            <p>Planejamento criativo para garantir que o design tenha propósito e direção.</p>
-          </div>
-          <div class="step-line"></div>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">03</div>
-          <div class="step-icon">✒️</div>
-          <div class="step-body">
-            <h3>Design</h3>
-            <p>Criação de artes únicas, profissionais e alinhadas à sua marca.</p>
-          </div>
-          <div class="step-line"></div>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">04</div>
-          <div class="step-icon">🔄</div>
-          <div class="step-body">
-            <h3>Revisões</h3>
-            <p>Ajustamos cada detalhe até o resultado final ficar perfeito.</p>
-          </div>
-          <div class="step-line"></div>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">05</div>
-          <div class="step-icon">🚀</div>
-          <div class="step-body">
-            <h3>Entrega</h3>
-            <p>Entrega dos arquivos prontos para uso com suporte e orientação.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== DIFERENCIAIS ========== -->
-  <section id="sobre" class="section diferentials-section">
-    <div class="container">
-      <p class="overline center reveal">POR QUE INVESTIR EM DESIGN?</p>
-      <h2 class="section-title center reveal">Design é mais que estética,<br />é estratégia.</h2>
-      <div class="dif-grid">
-        <div class="dif-card reveal">
-          <span class="dif-icon">⭐</span>
-          <div>
-            <h3>Mais credibilidade</h3>
-            <p>Sua marca transmite confiança e profissionalismo.</p>
-          </div>
-        </div>
-        <div class="dif-card reveal">
-          <span class="dif-icon">📈</span>
-          <div>
-            <h3>Mais profissionalismo</h3>
-            <p>Destaque-se da concorrência com uma identidade forte.</p>
-          </div>
-        </div>
-        <div class="dif-card reveal">
-          <span class="dif-icon">💎</span>
-          <div>
-            <h3>Mais percepção de valor</h3>
-            <p>Um bom design aumenta o valor percebido do seu serviço.</p>
-          </div>
-        </div>
-        <div class="dif-card reveal">
-          <span class="dif-icon">🎯</span>
-          <div>
-            <h3>Mais conversão</h3>
-            <p>Comunicação visual estratégica que atrai e converte clientes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CTA ========== -->
-  <section id="contato" class="section cta-section">
-    <div class="cta-bg" aria-hidden="true">
-      <div class="cta-waves"></div>
-      <div class="cta-chip">
-        <div class="chip-body">
-          <div class="chip-logo">R</div>
-          <div class="chip-lines">
-            <span></span><span></span><span></span><span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container cta-content">
-      <h2 class="cta-title reveal">
-        Sua marca merece parecer tão profissional<br />
-        quanto o serviço que você entrega.
+      <p class="overline center reveal">COMO EU TRABALHO</p>
+      <h2 class="section-title center reveal">
+        Ideias diferentes,<br />método único.
       </h2>
-      <a href="https://wa.me/5534999999999?text=Ol%C3%A1%20RAFA%20SD!%20Quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn btn-gold btn-large reveal">
-        Vamos conversar? ↗
-      </a>
+      <p class="metodo-intro center reveal">
+        Não importa se o projeto é uma foto, um vídeo, uma peça de design ou uma campanha de
+        social media: eu sigo a mesma lógica por trás de tudo o que crio.
+      </p>
+
+      <!-- 4 passos do método -->
+      <div class="method-grid">
+
+        <div class="method-card reveal">
+          <div class="method-num">01</div>
+          <div class="method-icon">👁</div>
+          <h3>Atenção nos<br />primeiros segundos</h3>
+          <p>
+            Todo conteúdo compete por atenção antes de competir por qualquer outra coisa.
+            O primeiro impacto — visual, de enquadramento ou de mensagem — é pensado pra
+            parar o scroll e prender o olhar antes de qualquer explicação.
+          </p>
+        </div>
+
+        <div class="method-card reveal">
+          <div class="method-num">02</div>
+          <div class="method-icon">🎯</div>
+          <h3>Direção<br />visual</h3>
+          <p>
+            Layout não é decoração, é direção. Hierarquia, cor, movimento e composição
+            existem pra guiar o olho do público exatamente por onde ele precisa passar —
+            na ordem certa, sem esforço.
+          </p>
+        </div>
+
+        <div class="method-card reveal">
+          <div class="method-num">03</div>
+          <div class="method-icon">🧭</div>
+          <h3>A jornada<br />do público</h3>
+          <p>
+            Penso em quem vai ver aquilo como alguém em um caminho: do primeiro contato
+            até a decisão final. Cada etapa da peça empurra suavemente essa pessoa adiante —
+            seja um vídeo, uma foto ou uma sequência de posts.
+          </p>
+        </div>
+
+        <div class="method-card reveal">
+          <div class="method-num">04</div>
+          <div class="method-icon">⚡</div>
+          <h3>CTA<br />estratégico</h3>
+          <p>
+            Toda peça termina em uma ação, não em um ponto final. A chamada pra ação é
+            pensada junto com o resto do conteúdo, não colada depois — ela é o destino pra
+            onde tudo foi construído.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Linha de fechamento do método -->
+      <div class="method-close reveal">
+        <div class="method-flow">
+          <span>Atenção</span>
+          <span class="arrow">→</span>
+          <span>Direção</span>
+          <span class="arrow">→</span>
+          <span>Jornada</span>
+          <span class="arrow">→</span>
+          <span class="gold">Ação</span>
+        </div>
+        <p>
+          É esse processo que aplico em cada projeto, independente da área ou do formato.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section id="contato" class="section contato-section">
+    <div class="contato-bg" aria-hidden="true">
+      <div class="contato-glow"></div>
+    </div>
+    <div class="container contato-content">
+      <p class="overline center reveal">CONTATO</p>
+      <h2 class="section-title center reveal">
+        Quer conversar<br />sobre um projeto?
+      </h2>
+
+      <div class="contato-grid">
+        <!-- Bloco principal: WhatsApp -->
+        <div class="contato-main reveal">
+          <a
+            href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto."
+            target="_blank"
+            rel="noopener"
+            class="btn btn-gold btn-large btn-whatsapp"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <p class="contato-hint">Resposta rápida · Sem formulário · Sem enrolação</p>
+        </div>
+
+        <!-- Dados de contato -->
+        <div class="contato-info reveal">
+          <div class="info-item">
+            <span class="info-label">Nome</span>
+            <span class="info-value placeholder">[Rafael — seu nome completo]</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">E-mail</span>
+            <a href="mailto:seuemail@email.com" class="info-value placeholder">[seu e-mail]</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">WhatsApp</span>
+            <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener" class="info-value placeholder">[seu número]</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Instagram</span>
+            <a href="https://instagram.com/rafasddesign" target="_blank" rel="noopener" class="info-value placeholder">[@seu instagram]</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="logo footer-logo">RAFA<span>SD</span></div>
-        <p class="footer-tagline">Design com propósito.<br />Resultados que conectam.</p>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo footer-logo">Rafael<span>SD</span></div>
+        <p class="footer-tagline">Produção multimídia com propósito.<br />Criação que gera resultado.</p>
       </div>
-      <div class="footer-col">
-        <h4>SERVIÇOS</h4>
-        <ul>
-          <li><a href="#servicos">Identidade Visual</a></li>
-          <li><a href="#servicos">Social Media</a></li>
-          <li><a href="#servicos">Apresentações</a></li>
-          <li><a href="#servicos">Materiais Impressos</a></li>
-          <li><a href="#servicos">Anúncios</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>VAMOS CONVERSAR?</h4>
-        <ul>
-          <li>
-            <a href="https://wa.me/5534999999999" target="_blank" rel="noopener">
-              📞 (34) 99999-9999
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/rafasddesign" target="_blank" rel="noopener">
-              📸 @rafasddesign
-            </a>
-          </li>
-        </ul>
+      <div class="footer-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#metodo">Como eu trabalho</a>
+        <a href="#contato">Contato</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 RAFA SD. Todos os direitos reservados.</p>
+      <p>© 2024 Rafael SD. Todos os direitos reservados.</p>
     </div>
   </footer>
 
