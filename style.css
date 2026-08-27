@@ -362,7 +362,51 @@ body {
 .hero-body {
   position: relative;
   z-index: 2;
-  max-width: 760px;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.hero-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-main-content {
+  flex: 1;
+  max-width: 640px;
+}
+
+.hero-image-wrapper {
+  flex: 0 0 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-photo {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* subtle glow behind photo to stand out from dark background */
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.05)) drop-shadow(0 0 60px rgba(79, 142, 247, 0.03));
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+
+@media (max-width: 900px) {
+  .hero-flex-container {
+    flex-direction: column-reverse;
+    text-align: left;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .hero-image-wrapper {
+    flex: none;
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .hero-heading .line-a {
