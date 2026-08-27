@@ -92,11 +92,27 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   resize();
   window.addEventListener('resize', resize, { passive: true });
 
-  let mx = -400, my = -400, cx = -400, cy = -400, idle = 0, alpha = 0;
+  let mx = 100, my = 150, cx = 100, cy = 150, idle = 0, alpha = 0;
 
-  window.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY; idle = 0;
+  window.addEventListener('scroll', () => {
+    // Determine target positions based on scroll percentage
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+    
+    // Move from left (15%) to right (85%) horizontally, and keep centered vertically with a subtle wave
+    mx = window.innerWidth * (0.15 + pct * 0.70);
+    my = window.innerHeight * (0.45 + Math.sin(pct * Math.PI) * 0.15);
+    
+    idle = 0;
   }, { passive: true });
+
+  // Set initial position based on current scroll on load
+  setTimeout(() => {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+    mx = cx = window.innerWidth * (0.15 + pct * 0.70);
+    my = cy = window.innerHeight * (0.45 + Math.sin(pct * Math.PI) * 0.15);
+  }, 100);
 
   const lerp = (a, b, t) => a + (b - a) * t;
 
@@ -136,10 +152,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
   function draw() {
     requestAnimationFrame(draw);
-    cx = lerp(cx, mx, 0.10);
-    cy = lerp(cy, my, 0.10);
+    cx = lerp(cx, mx, 0.08);
+    cy = lerp(cy, my, 0.08);
     idle++;
-    alpha = lerp(alpha, idle < 6 ? 1 : 0, 0.055);
+    // Keep it visible for a bit longer when scrolling (idle threshold 15)
+    alpha = lerp(alpha, idle < 15 ? 1 : 0, 0.055);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     if (alpha < 0.004) return;
     const a = alpha;
