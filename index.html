@@ -6,202 +6,209 @@
   <title>Rafael SD — Produtor Multimídia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ========== NAVBAR ========== -->
-  <header id="navbar">
-    <div class="container nav-inner">
-      <a href="#sobre" class="logo">Rafael<span>SD</span></a>
+  <!-- NAV -->
+  <header id="nav">
+    <div class="wrap nav-inner">
+      <a href="#sobre" class="wordmark">RAFAEL<em>SD</em></a>
       <nav class="nav-links">
         <a href="#sobre">Sobre</a>
         <a href="#metodo">Como eu trabalho</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a href="#contato" class="btn btn-gold nav-cta">Falar comigo</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <a href="#contato" class="nav-cta">Falar comigo</a>
+      <button class="burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#sobre" class="mobile-link">Sobre</a>
-      <a href="#metodo" class="mobile-link">Como eu trabalho</a>
-      <a href="#contato" class="mobile-link">Contato</a>
-      <a href="#contato" class="btn btn-gold mobile-cta">Falar comigo</a>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#sobre">Sobre</a>
+      <a href="#metodo">Como eu trabalho</a>
+      <a href="#contato">Contato</a>
+      <a href="#contato" class="nav-cta mob-cta">Falar comigo</a>
     </div>
   </header>
 
-  <!-- ========== HERO / SOBRE ========== -->
+  <!-- ═══════════════ HERO / SOBRE ═══════════════ -->
   <section id="sobre" class="hero">
-    <div class="hero-bg">
-      <div class="gold-wave wave1"></div>
-      <div class="gold-wave wave2"></div>
-      <div class="particles" id="particles"></div>
+
+    <!-- prismatic streaks — the signature element -->
+    <div class="prism-layer" aria-hidden="true">
+      <div class="streak s1"></div>
+      <div class="streak s2"></div>
+      <div class="streak s3"></div>
+      <div class="streak s4"></div>
     </div>
 
-    <!-- 3D floating objects -->
-    <div class="scene" aria-hidden="true">
-      <div class="obj sphere">
-        <div class="sphere-inner"></div>
-        <div class="sphere-glow"></div>
-      </div>
-      <div class="obj emblem">
-        <div class="emblem-ring">
-          <span class="emblem-letter">R</span>
-        </div>
-      </div>
-      <div class="obj geo geo1"></div>
-      <div class="obj geo geo2"></div>
+    <!-- concentric ring logo mark -->
+    <div class="ring-mark" aria-hidden="true">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="95"  stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <circle cx="100" cy="100" r="78"  stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        <circle cx="100" cy="100" r="61"  stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <circle cx="100" cy="100" r="44"  stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        <circle cx="100" cy="100" r="27"  stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <circle cx="100" cy="100" r="10"  stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      </svg>
     </div>
 
-    <div class="container hero-content">
-      <p class="overline reveal">PRODUTOR MULTIMÍDIA · UBERLÂNDIA / UBERABA (MG)</p>
-      <h1 class="hero-title reveal">
-        Rafael,<br />
-        <span class="gold">produtor multimídia.</span>
+    <!-- lens glow -->
+    <div class="lens lens-tl" aria-hidden="true"></div>
+    <div class="lens lens-br" aria-hidden="true"></div>
+
+    <div class="wrap hero-body">
+      <p class="eyebrow">PRODUTOR MULTIMÍDIA · UBERLÂNDIA / UBERABA (MG)</p>
+
+      <h1 class="hero-heading">
+        <span class="line-a">RAFAEL,</span>
+        <span class="line-b">PRODUTOR<br/>MULTIMÍDIA.</span>
       </h1>
 
-      <div class="bio reveal">
+      <div class="hero-text-block">
         <p>
-          <strong class="placeholder">[X] anos</strong>, baseado em Uberlândia/Uberaba (MG),
-          atuando com produção multimídia para marcas e negócios que precisam de presença
-          digital que realmente converte — não só que "parece bonita".
+          <span class="ph">[X] anos</span>, baseado em Uberlândia / Uberaba (MG).
+          Atuando com produção multimídia para marcas e negócios que precisam de
+          presença digital que realmente converte — não só que "parece bonita".
         </p>
         <p>
-          Trabalho na ponte entre criação e resultado: fotografia, vídeo, design e social media,
-          sempre com um objetivo claro por trás — atrair atenção, guiar o público e gerar ação.
+          Trabalho na ponte entre criação e resultado: fotografia, vídeo, design
+          e social media, sempre com um objetivo claro por trás —
+          atrair atenção, guiar o público e gerar ação.
         </p>
       </div>
 
-      <!-- Passagem por -->
-      <div class="passage reveal">
-        <span class="passage-label">Passagem por</span>
-        <span class="passage-items">
-          <span class="placeholder">[empresa ou cliente 1]</span>
-          <span class="sep">·</span>
-          <span class="placeholder">[empresa ou cliente 2]</span>
-          <span class="sep">·</span>
-          <span class="placeholder">[agência ou cliente 3]</span>
-        </span>
+      <!-- passagem -->
+      <div class="passage">
+        <span class="passage-label">PASSAGEM POR</span>
+        <div class="passage-list">
+          <span class="ph">[empresa / cliente 1]</span>
+          <span class="dot"></span>
+          <span class="ph">[empresa / cliente 2]</span>
+          <span class="dot"></span>
+          <span class="ph">[agência / cliente 3]</span>
+        </div>
       </div>
 
-      <!-- Ferramentas -->
-      <div class="tools reveal">
-        <p class="tools-label">Ferramentas e frentes de trabalho</p>
-        <div class="tools-grid">
-          <div class="tool-item">
-            <span class="tool-dot"></span>
-            <div>
-              <strong>Desenvolvimento web</strong>
-              <span>Next.js, TypeScript, Tailwind CSS</span>
-            </div>
+      <!-- ferramentas -->
+      <div class="tools-block">
+        <p class="tools-label">FERRAMENTAS E FRENTES DE TRABALHO</p>
+        <div class="tools-list">
+          <div class="tool">
+            <span class="tool-name">Desenvolvimento web</span>
+            <span class="tool-detail">Next.js · TypeScript · Tailwind CSS</span>
           </div>
-          <div class="tool-item">
-            <span class="tool-dot"></span>
-            <div>
-              <strong>Mídia paga</strong>
-              <span>Arquitetura de campanhas Meta Ads, estratégia de funil</span>
-            </div>
+          <div class="tool">
+            <span class="tool-name">Mídia paga</span>
+            <span class="tool-detail">Meta Ads · Arquitetura de funil</span>
           </div>
-          <div class="tool-item">
-            <span class="tool-dot"></span>
-            <div>
-              <strong>Conteúdo &amp; leads</strong>
-              <span>Estratégia de conteúdo e geração de leads via social media</span>
-            </div>
+          <div class="tool">
+            <span class="tool-name">Conteúdo e leads</span>
+            <span class="tool-detail">Estratégia de social media · Geração de leads</span>
           </div>
-          <div class="tool-item">
-            <span class="tool-dot"></span>
-            <div>
-              <strong>Produção criativa</strong>
-              <span>Fotografia, audiovisual e design</span>
-            </div>
+          <div class="tool">
+            <span class="tool-name">Produção criativa</span>
+            <span class="tool-detail">Fotografia · Audiovisual · Design</span>
           </div>
         </div>
       </div>
 
-      <div class="hero-btns reveal">
-        <a href="#metodo" class="btn btn-gold">Como eu trabalho ↓</a>
-        <a href="#contato" class="btn btn-outline">Falar comigo ↗</a>
+      <div class="hero-actions">
+        <a href="#metodo" class="btn-primary">Como eu trabalho</a>
+        <a href="#contato" class="btn-ghost">Falar comigo ↗</a>
       </div>
     </div>
-
-    <div class="scroll-hint" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- ========== COMO EU TRABALHO ========== -->
-  <section id="metodo" class="section metodo-section">
-    <div class="container">
-      <p class="overline center reveal">COMO EU TRABALHO</p>
-      <h2 class="section-title center reveal">
-        Ideias diferentes,<br />método único.
-      </h2>
-      <p class="metodo-intro center reveal">
-        Não importa se o projeto é uma foto, um vídeo, uma peça de design ou uma campanha de
-        social media: eu sigo a mesma lógica por trás de tudo o que crio.
-      </p>
+  <!-- ═══════════════ COMO EU TRABALHO ═══════════════ -->
+  <section id="metodo" class="section-metodo">
+    <div class="wrap">
 
-      <!-- 4 passos do método -->
-      <div class="method-grid">
+      <div class="metodo-header">
+        <p class="eyebrow">COMO EU TRABALHO</p>
+        <h2 class="section-heading">IDEIAS<br/>DIFERENTES,<br/>MÉTODO ÚNICO.</h2>
+        <p class="section-sub">
+          Não importa se o projeto é uma foto, um vídeo, uma peça de design ou uma campanha
+          de social media: eu sigo a mesma lógica por trás de tudo o que crio.
+        </p>
+      </div>
 
-        <div class="method-card reveal">
-          <div class="method-num">01</div>
-          <div class="method-icon">👁</div>
-          <h3>Atenção nos<br />primeiros segundos</h3>
-          <p>
-            Todo conteúdo compete por atenção antes de competir por qualquer outra coisa.
-            O primeiro impacto — visual, de enquadramento ou de mensagem — é pensado pra
-            parar o scroll e prender o olhar antes de qualquer explicação.
-          </p>
+      <div class="method-steps">
+
+        <div class="method-step">
+          <div class="step-left">
+            <span class="step-n">01</span>
+            <div class="step-bar"></div>
+          </div>
+          <div class="step-right">
+            <h3>ATENÇÃO NOS<br/>PRIMEIROS SEGUNDOS</h3>
+            <p>
+              Todo conteúdo compete por atenção antes de competir por qualquer outra coisa.
+              O primeiro impacto — visual, de enquadramento ou de mensagem — é pensado pra
+              parar o scroll e prender o olhar antes de qualquer explicação.
+            </p>
+          </div>
         </div>
 
-        <div class="method-card reveal">
-          <div class="method-num">02</div>
-          <div class="method-icon">🎯</div>
-          <h3>Direção<br />visual</h3>
-          <p>
-            Layout não é decoração, é direção. Hierarquia, cor, movimento e composição
-            existem pra guiar o olho do público exatamente por onde ele precisa passar —
-            na ordem certa, sem esforço.
-          </p>
+        <div class="method-step">
+          <div class="step-left">
+            <span class="step-n">02</span>
+            <div class="step-bar"></div>
+          </div>
+          <div class="step-right">
+            <h3>DIREÇÃO<br/>VISUAL</h3>
+            <p>
+              Layout não é decoração, é direção. Hierarquia, cor, movimento e composição
+              existem pra guiar o olho do público exatamente por onde ele precisa passar —
+              na ordem certa, sem esforço.
+            </p>
+          </div>
         </div>
 
-        <div class="method-card reveal">
-          <div class="method-num">03</div>
-          <div class="method-icon">🧭</div>
-          <h3>A jornada<br />do público</h3>
-          <p>
-            Penso em quem vai ver aquilo como alguém em um caminho: do primeiro contato
-            até a decisão final. Cada etapa da peça empurra suavemente essa pessoa adiante —
-            seja um vídeo, uma foto ou uma sequência de posts.
-          </p>
+        <div class="method-step">
+          <div class="step-left">
+            <span class="step-n">03</span>
+            <div class="step-bar"></div>
+          </div>
+          <div class="step-right">
+            <h3>A JORNADA<br/>DO PÚBLICO</h3>
+            <p>
+              Penso em quem vai ver aquilo como alguém em um caminho: do primeiro contato
+              até a decisão final. Cada etapa da peça empurra suavemente essa pessoa
+              adiante — seja um vídeo, uma foto ou uma sequência de posts.
+            </p>
+          </div>
         </div>
 
-        <div class="method-card reveal">
-          <div class="method-num">04</div>
-          <div class="method-icon">⚡</div>
-          <h3>CTA<br />estratégico</h3>
-          <p>
-            Toda peça termina em uma ação, não em um ponto final. A chamada pra ação é
-            pensada junto com o resto do conteúdo, não colada depois — ela é o destino pra
-            onde tudo foi construído.
-          </p>
+        <div class="method-step">
+          <div class="step-left">
+            <span class="step-n">04</span>
+          </div>
+          <div class="step-right">
+            <h3>CTA<br/>ESTRATÉGICO</h3>
+            <p>
+              Toda peça termina em uma ação, não em um ponto final. A chamada pra ação
+              é pensada junto com o resto do conteúdo, não colada depois — ela é o destino
+              pra onde tudo foi construído.
+            </p>
+          </div>
         </div>
 
       </div>
 
-      <!-- Linha de fechamento do método -->
-      <div class="method-close reveal">
-        <div class="method-flow">
+      <!-- método fechamento -->
+      <div class="method-close">
+        <div class="flow-line">
           <span>Atenção</span>
-          <span class="arrow">→</span>
+          <span class="arr">→</span>
           <span>Direção</span>
-          <span class="arrow">→</span>
+          <span class="arr">→</span>
           <span>Jornada</span>
-          <span class="arrow">→</span>
-          <span class="gold">Ação</span>
+          <span class="arr">→</span>
+          <span class="prism-text">Ação</span>
         </div>
         <p>
           É esse processo que aplico em cada projeto, independente da área ou do formato.
@@ -211,68 +218,62 @@
     </div>
   </section>
 
-  <!-- ========== CONTATO ========== -->
-  <section id="contato" class="section contato-section">
-    <div class="contato-bg" aria-hidden="true">
-      <div class="contato-glow"></div>
-    </div>
-    <div class="container contato-content">
-      <p class="overline center reveal">CONTATO</p>
-      <h2 class="section-title center reveal">
-        Quer conversar<br />sobre um projeto?
-      </h2>
+  <!-- ═══════════════ CONTATO ═══════════════ -->
+  <section id="contato" class="section-contato">
+    <!-- prismatic accent linha -->
+    <div class="contato-prism" aria-hidden="true"></div>
 
-      <div class="contato-grid">
-        <!-- Bloco principal: WhatsApp -->
-        <div class="contato-main reveal">
-          <a
-            href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto."
-            target="_blank"
-            rel="noopener"
-            class="btn btn-gold btn-large btn-whatsapp"
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Chamar no WhatsApp
-          </a>
-          <p class="contato-hint">Resposta rápida · Sem formulário · Sem enrolação</p>
+    <div class="wrap contato-inner">
+
+      <div class="contato-left">
+        <p class="eyebrow">CONTATO</p>
+        <h2 class="section-heading">QUER CONVERSAR<br/>SOBRE UM<br/>PROJETO?</h2>
+        <a
+          href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar."
+          target="_blank"
+          rel="noopener"
+          class="btn-primary btn-wa"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Chamar no WhatsApp
+        </a>
+        <p class="contato-note">Resposta rápida · Sem formulário</p>
+      </div>
+
+      <div class="contato-right">
+        <div class="info-row">
+          <span class="info-k">NOME</span>
+          <span class="info-v ph">[Rafael — nome completo]</span>
         </div>
-
-        <!-- Dados de contato -->
-        <div class="contato-info reveal">
-          <div class="info-item">
-            <span class="info-label">Nome</span>
-            <span class="info-value placeholder">[Rafael — seu nome completo]</span>
-          </div>
-          <div class="info-item">
-            <span class="info-label">E-mail</span>
-            <a href="mailto:seuemail@email.com" class="info-value placeholder">[seu e-mail]</a>
-          </div>
-          <div class="info-item">
-            <span class="info-label">WhatsApp</span>
-            <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener" class="info-value placeholder">[seu número]</a>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Instagram</span>
-            <a href="https://instagram.com/rafasddesign" target="_blank" rel="noopener" class="info-value placeholder">[@seu instagram]</a>
-          </div>
+        <div class="info-row">
+          <span class="info-k">E-MAIL</span>
+          <a href="mailto:seuemail@email.com" class="info-v ph">[seu e-mail]</a>
+        </div>
+        <div class="info-row">
+          <span class="info-k">WHATSAPP</span>
+          <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener" class="info-v ph">[seu número]</a>
+        </div>
+        <div class="info-row">
+          <span class="info-k">INSTAGRAM</span>
+          <a href="https://instagram.com/rafasddesign" target="_blank" rel="noopener" class="info-v ph">[@seu instagram]</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="logo footer-logo">Rafael<span>SD</span></div>
-        <p class="footer-tagline">Produção multimídia com propósito.<br />Criação que gera resultado.</p>
-      </div>
-      <div class="footer-links">
+    <div class="wrap footer-inner">
+      <span class="wordmark footer-wordmark">RAFAEL<em>SD</em></span>
+      <p class="footer-tag">Produção multimídia com propósito.</p>
+      <nav class="footer-nav">
         <a href="#sobre">Sobre</a>
         <a href="#metodo">Como eu trabalho</a>
         <a href="#contato">Contato</a>
-      </div>
+      </nav>
     </div>
     <div class="footer-bottom">
       <p>© 2024 Rafael SD. Todos os direitos reservados.</p>
