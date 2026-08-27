@@ -544,7 +544,7 @@ body {
 }
 
 .tools-logos-img {
-  max-height: 28px;
+  max-height: 48px; /* Increased from 28px for better visibility */
   width: auto;
   opacity: 0.85;
   /* invert black icons to white to suit the premium dark background */
