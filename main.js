@@ -162,45 +162,36 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     const a = alpha;
 
     /* central glow */
-    fillRad(cx, cy, 0, 140, [
-      [0,   `rgba(255,255,255,${0.13 * a})`],
-      [0.3, `rgba(79,142,247,${0.07 * a})`],
-      [0.7, `rgba(62,207,110,${0.03 * a})`],
-      [1,   'transparent'],
-    ]);
+    ctx.filter = 'blur(20px)';
+    
+    // Draw multiple vertical "varetas" offset horizontally for chromatic aberration
+    const varetas = [
+      { dx: -20, h: 280, w: 6,  col: 'rgba(79, 142, 247, ' },   // Blue bar
+      { dx: -10, h: 320, w: 4,  col: 'rgba(62, 207, 110, ' },   // Green bar
+      { dx: 0,   h: 360, w: 10, col: 'rgba(255, 255, 255, ' },  // White core bar
+      { dx: 10,  h: 320, w: 4,  col: 'rgba(247, 162, 62, ' },   // Orange bar
+      { dx: 20,  h: 280, w: 6,  col: 'rgba(247, 79, 79, ' }     // Red bar
+    ];
 
-    /* RGB cores — chromatic aberration */
-    fillRad(cx - 7, cy - 5, 0, 30, [[0, `rgba(79,142,247,${0.50 * a})`],  [1, 'transparent']]);
-    fillRad(cx,     cy,     0, 24, [[0, `rgba(255,255,255,${0.28 * a})`], [1, 'transparent']]);
-    fillRad(cx + 7, cy + 5, 0, 30, [[0, `rgba(247,79,79,${0.45 * a})`],  [1, 'transparent']]);
+    varetas.forEach(v => {
+      const g = ctx.createLinearGradient(0, cy - v.h/2, 0, cy + v.h/2);
+      g.addColorStop(0, 'transparent');
+      g.addColorStop(0.5, `${v.col}${0.35 * a})`);
+      g.addColorStop(1, 'transparent');
 
-    /* halo rings */
-    ring(cx - 9,  cy - 6, 48,  `rgba(79,142,247,${0.20 * a})`);
-    ring(cx,      cy,     42,  `rgba(255,255,255,${0.12 * a})`);
-    ring(cx + 9,  cy + 6, 48,  `rgba(247,79,79,${0.18 * a})`);
-    ring(cx - 14, cy - 9, 88,  `rgba(62,207,110,${0.09 * a})`);
-    ring(cx,      cy,     80,  `rgba(247,162,62,${0.07 * a})`);
-    ring(cx + 14, cy + 9, 88,  `rgba(247,79,79,${0.08 * a})`);
-    ring(cx,      cy,     140, `rgba(255,255,255,${0.025 * a})`);
-
-    /* diagonal streaks at brand angle */
-    streak(cx, cy, 380, ANG,                `rgba(79,142,247,${0.24 * a})`);
-    streak(cx, cy, 300, ANG + 0.01,         `rgba(62,207,110,${0.15 * a})`);
-    streak(cx, cy, 240, ANG - 0.01,         `rgba(247,79,79,${0.13 * a})`);
-    streak(cx, cy, 160, ANG + Math.PI / 2,  `rgba(255,255,255,${0.05 * a})`);
-
-    /* lens ghost reflections */
-    const W = canvas.width, H = canvas.height;
-    [
-      { px: 0.70, py: 0.20, r: 18, col: '79,142,247',  o: 0.28 },
-      { px: 0.30, py: 0.78, r: 14, col: '247,79,79',   o: 0.22 },
-      { px: 0.55, py: 0.40, r: 10, col: '62,207,110',  o: 0.18 },
-      { px: 0.20, py: 0.50, r:  8, col: '247,162,62',  o: 0.14 },
-    ].forEach(({ px, py, r, col, o }) => {
-      const sx = cx + (W * px - cx) * 0.45;
-      const sy = cy + (H * py - cy) * 0.45;
-      fillRad(sx, sy, 0, r, [[0, `rgba(${col},${o * a})`], [1, 'transparent']]);
+      ctx.fillStyle = g;
+      ctx.fillRect(cx + v.dx - v.w/2, cy - v.h/2, v.w, v.h);
     });
+
+    // Reset filter
+    ctx.filter = 'none';
+
+    /* diagonal streaks at brand angle (much softer and blurred) */
+    ctx.filter = 'blur(15px)';
+    streak(cx, cy, 400, ANG,                `rgba(79,142,247,${0.15 * a})`);
+    streak(cx, cy, 320, ANG + 0.01,         `rgba(62,207,110,${0.10 * a})`);
+    streak(cx, cy, 260, ANG - 0.01,         `rgba(247,79,79,${0.08 * a})`);
+    ctx.filter = 'none';
   }
 
   draw();
