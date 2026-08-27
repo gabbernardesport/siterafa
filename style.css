@@ -537,6 +537,25 @@ body {
   border-top: 1px solid var(--border);
 }
 
+.tools-logos-container {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tools-logos-img {
+  max-height: 28px;
+  width: auto;
+  opacity: 0.85;
+  /* invert black icons to white to suit the premium dark background */
+  filter: invert(1); 
+  transition: opacity var(--t);
+}
+
+.tools-logos-img:hover {
+  opacity: 1;
+}
+
 .tool {
   display: flex;
   flex-direction: column;
