@@ -24,11 +24,29 @@
     var(--prism-1),
     var(--prism-2),
     var(--prism-3),
-    var(--prism-4)
+    var(--prism-4),
+    var(--prism-1) /* repeat first color for seamless loop */
   );
 
   --radius: 0px;        /* zero-radius: autoridade técnica */
   --t: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Prismatic color loop animation for borders/lines */
+@keyframes prismLoop {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.section-metodo::before,
+.contato-prism {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--prism-grad);
+  background-size: 200% auto;
+  animation: prismLoop 6s linear infinite;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -590,17 +608,12 @@ body {
 .section-metodo {
   padding: 130px 0;
   background: var(--surface);
-  border-top: 1px solid var(--border);
   position: relative;
   overflow: hidden;
 }
 
 .section-metodo::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--prism-grad);
+  /* empty rule block to be overridden by animated divider */
 }
 
 .metodo-header {
@@ -723,16 +736,12 @@ body {
 .section-contato {
   padding: 130px 0;
   background: var(--bg);
-  border-top: 1px solid var(--border);
   position: relative;
   overflow: hidden;
 }
 
 .contato-prism {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--prism-grad);
+  /* empty rule block to be overridden by animated divider */
 }
 
 .contato-inner {
